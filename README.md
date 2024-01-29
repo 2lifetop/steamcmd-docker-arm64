@@ -16,7 +16,7 @@ To build the Docker image, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/steamcmd-docker-arm64.git
+   git clone https://github.com/2lifetop/steamcmd-docker-arm64.git
    ```
 
 2. Navigate to the repository's directory:
