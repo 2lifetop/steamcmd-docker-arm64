@@ -73,7 +73,7 @@ WORKDIR /home/steam/.fex-emu/RootFS/
 
 # Set up rootfs
 
-RUN wget -O Ubuntu_22_04.tar.gz https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.tar.gz
+RUN wget -O Ubuntu_22_04.tar.gz https://github.com/TeriyakiGod/steamcmd-docker-arm64/raw/d9498a6fec80cf9694e77a2ec9326e68f9a5dcb5/Ubuntu_22_04.tar.gz
 
 RUN tar xzf Ubuntu_22_04.tar.gz
 
@@ -83,7 +83,7 @@ WORKDIR /home/steam/.fex-emu
 
 RUN echo '{"Config":{"RootFS":"Ubuntu_22_04"}}' > ./Config.json
 
-WORKDIR /home/steam/Steam
+WORKDIR /home/steam/steamcmd
 
 # Download and run SteamCMD
 RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
